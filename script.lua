@@ -33,12 +33,7 @@ e:Box(
                         game.Players.LocalPlayer.Character.Animate.Disabled = false
                         game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
                         wait(.70)
-                        local i = "PaintBucket"
-                        for j, k in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-                            if k:IsA("Tool") and k.Name == i then
-                                k.Parent = game:GetService("Players").LocalPlayer.Character
-                            end
-                        end
+                        k.Parent = game:GetService("Players").LocalPlayer.Character
                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
                             game.Players[q].Character.Head.CFrame
                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
